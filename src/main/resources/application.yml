@@ -1,0 +1,7 @@
+services:
+    aalias:
+        unit: accounts-daemon.service
+        description: This is service for checking status.
+    ablias:
+        unit: accounts-daemon.service
+        description: description
