@@ -1,13 +1,10 @@
 plugins {
     id "org.springframework.boot" version "2.0.5.RELEASE"
+    id "java"
 }
+
 group 'net.ozertsov'
 version '1.0-SNAPSHOT'
-
-
-apply plugin: 'java'
-
-apply plugin: 'org.springframework.boot'
 
 sourceCompatibility = 1.8
 
@@ -22,12 +19,9 @@ dependencies {
     compile "com.fasterxml.jackson.core:jackson-core:2.9.7"
     compile "com.fasterxml.jackson.core:jackson-annotations:2.9.7"
     compile "com.fasterxml.jackson.core:jackson-databind:2.9.7"
-//    compile "com.fasterxml.jackson.core:jackson-dataformat-yaml:2.9.7"
     compile ("org.springframework.boot:spring-boot-starter-data-rest:2.0.5.RELEASE") {
         exclude module : 'spring-boot-starter-logging'
     }
-//    compile "org.springframework.boot:spring-boot-starter-web:2.0.5.RELEASE"
-//    compile "org.springframework.boot:spring-boot-starter-logging:2.0.5.RELEASE
 
     compileClasspath "org.springframework.boot:spring-boot-gradle-plugin:2.0.5.RELEASE"
 
